@@ -18,7 +18,7 @@ public class AppWindow : MarkupWindow
         VStack (
             TextBlock ()
                .Bind (vm.SampleTest),
-            Button ("Test!")
+            Button ("Test!!")
                .Width(100)
                .Height(100)
                .HorizontalAlignment(System.Windows.HorizontalAlignment.Center)
