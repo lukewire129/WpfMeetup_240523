@@ -5,7 +5,7 @@ using static CSharpMarkup.Wpf.Helpers;
 
 namespace CSharpForMarkupTest;
 
-public class AppWindow : BaseWindow
+public class AppWindow : MarkupWindow
 {
     MainViewModel vm;
     public AppWindow()
@@ -18,10 +18,11 @@ public class AppWindow : BaseWindow
         VStack (
             TextBlock ()
                .Bind (vm.SampleTest),
-            Button ("Test")
-               .Width(50)
+            Button ("Test!")
+               .Width(100)
                .Height(100)
                .HorizontalAlignment(System.Windows.HorizontalAlignment.Center)
                .Bind(vm.OkCommand)
-            );
+            )
+            .Background("#13333");
 }
