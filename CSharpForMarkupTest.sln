@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpForMarkupTest", "CSha
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpMarkup.WPF.Support", "CSharpMarkup.WPF.Support\CSharpMarkup.WPF.Support.csproj", "{C75122AC-C938-42AA-BD88-682C265934EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpForMarkupLogin", "CSharpForMarkupLogin\CSharpForMarkupLogin.csproj", "{4053F31A-7982-414D-BB84-E5D4990B5B50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{5187A8CC-77DA-4CA5-ADEF-0E722D84ADF8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +25,17 @@ Global
 		{C75122AC-C938-42AA-BD88-682C265934EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C75122AC-C938-42AA-BD88-682C265934EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C75122AC-C938-42AA-BD88-682C265934EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4053F31A-7982-414D-BB84-E5D4990B5B50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4053F31A-7982-414D-BB84-E5D4990B5B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4053F31A-7982-414D-BB84-E5D4990B5B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4053F31A-7982-414D-BB84-E5D4990B5B50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B33CAAC3-6DC7-4B7C-8DF4-0E702863BE92} = {5187A8CC-77DA-4CA5-ADEF-0E722D84ADF8}
+		{4053F31A-7982-414D-BB84-E5D4990B5B50} = {5187A8CC-77DA-4CA5-ADEF-0E722D84ADF8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8170DD23-12D1-4196-B6C6-FD61504E9B0A}
