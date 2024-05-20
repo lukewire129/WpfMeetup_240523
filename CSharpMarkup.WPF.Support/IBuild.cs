@@ -1,4 +1,4 @@
-﻿namespace CSharpForMakupTest.Core;
+﻿namespace CSharpMarkup.WPF.Support;
 
 public interface IBuild
 {

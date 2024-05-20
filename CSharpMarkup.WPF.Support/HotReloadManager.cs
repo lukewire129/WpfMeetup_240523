@@ -1,9 +1,9 @@
 ﻿#if DEBUG
 using System.Windows;
 
-[assembly: System.Reflection.Metadata.MetadataUpdateHandler (typeof (CSharpForMakupTest.Core.HotReloadManager))]
+[assembly: System.Reflection.Metadata.MetadataUpdateHandler (typeof (CSharpMarkup.WPF.Support.HotReloadManager))]
 
-namespace CSharpForMakupTest.Core;
+namespace CSharpMarkup.WPF.Support;
 
 public static class HotReloadManager
 {

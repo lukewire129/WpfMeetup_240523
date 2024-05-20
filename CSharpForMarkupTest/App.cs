@@ -1,4 +1,4 @@
-﻿using CSharpForMakupTest.Core;
+﻿using CSharpMarkup.WPF.Support;
 using System.Windows;
 namespace CSharpForMarkupTest;
 
@@ -7,11 +7,5 @@ public class App : MarkupApplication
     public App()
     {
         MainWindow = new AppWindow ();
-    }
-
-    protected override void OnStartup(StartupEventArgs e)
-    {
-        MainWindow.Show ();
-        base.OnStartup(e);
     }
 }
