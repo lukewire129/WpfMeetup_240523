@@ -1,5 +1,6 @@
 ﻿#if DEBUG
 using System.Windows;
+using System.Windows.Navigation;
 
 [assembly: System.Reflection.Metadata.MetadataUpdateHandler (typeof (CSharpMarkup.WPF.Support.HotReloadManager))]
 
@@ -23,11 +24,18 @@ public static class HotReloadManager
             {
                 foreach (var type in types)
                 {
-                    if (type.ToString () != window.ToString ())
+                    if (window.ToString() == "Microsoft.VisualStudio.DesignTools.WpfTap.WpfVisualTreeService.Adorners.AdornerWindow")
                     {
                         continue;
                     }
-                    ((IBuild)window).Build();
+                    if ((type.BaseType == typeof(MarkupPage) || type.BaseType == typeof(MarkupWindow)) == false)
+                    {
+                        continue;
+                    }
+
+                    object o = type.BaseType == typeof(MarkupWindow) ? window : ((NavigationWindow)window).NavigationService.Content;
+
+                    ((IBuild)o).Build();
                 }
             }
         });
