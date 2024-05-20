@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace CSharpForMakupTest.Core;
+namespace CSharpMarkup.WPF.Support;
 
 public abstract class MarkupWindow  : Window, IBuild
 {

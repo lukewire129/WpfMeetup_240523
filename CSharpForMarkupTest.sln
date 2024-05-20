@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpForMarkupTest", "CSharpForMarkupTest\CSharpForMarkupTest.csproj", "{B33CAAC3-6DC7-4B7C-8DF4-0E702863BE92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpForMarkupTest", "CSharpForMarkupTest\CSharpForMarkupTest.csproj", "{B33CAAC3-6DC7-4B7C-8DF4-0E702863BE92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpForMakupTest.Core", "CSharpForMakupTest.Core\CSharpForMakupTest.Core.csproj", "{C75122AC-C938-42AA-BD88-682C265934EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpMarkup.WPF.Support", "CSharpMarkup.WPF.Support\CSharpMarkup.WPF.Support.csproj", "{C75122AC-C938-42AA-BD88-682C265934EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

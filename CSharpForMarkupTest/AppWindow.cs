@@ -1,4 +1,4 @@
-﻿using CSharpForMakupTest.Core;
+﻿using CSharpMarkup.WPF.Support;
 using CSharpForMarkupTest.ViewModels;
 using CSharpMarkup.Wpf;
 using static CSharpMarkup.Wpf.Helpers;
@@ -23,6 +23,5 @@ public class AppWindow : MarkupWindow
                .Height(100)
                .HorizontalAlignment(System.Windows.HorizontalAlignment.Center)
                .Bind(vm.OkCommand)
-            )
-            .Background("#13333");
+            );
 }
