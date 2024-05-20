@@ -2,9 +2,9 @@
 
 namespace CSharpForMakupTest.Core;
 
-public abstract class LukeApplication : Application
+public abstract class MarkupApplication : Application
 {
-    public LukeApplication()
+    public MarkupApplication()
     {
         HotReloadManager.Init (this);
     }

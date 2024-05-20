@@ -2,7 +2,7 @@
 using System.Windows;
 namespace CSharpForMarkupTest;
 
-public class App : LukeApplication
+public class App : MarkupApplication
 {
     public App()
     {

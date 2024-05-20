@@ -7,8 +7,8 @@ namespace CSharpForMakupTest.Core;
 
 public static class HotReloadManager
 {
-    public static LukeApplication app;
-    public static void Init(LukeApplication application)
+    public static MarkupApplication app;
+    public static void Init(MarkupApplication application)
     {
         app = application;
     }
