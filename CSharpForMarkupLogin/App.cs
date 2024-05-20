@@ -1,25 +1,26 @@
-﻿using CSharpForMarkupLogin.Views;
-using CSharpMarkup.WPF.Support;
-using System.Windows.Navigation;
+﻿using CSharpForMarkupLogin.UI.Pages;
+using CSharpForMarkupLogin.Views;
 
 namespace CSharpForMarkupLogin;
 
 public class App : MarkupApplication
 {
-    NavigationWindow _navigationWindow;
+    Base.Navigation.NavigationWindow _navigationWindow;
     private LoginPage? loginPage;
+    private MainPage? mainPage;
+    internal static new App? Current { get; private set; }
     public App()
     {
-        MainWindow = _navigationWindow = new NavigationWindow ()
+        Current = this;
+        MainWindow = _navigationWindow = new Base.Navigation.NavigationWindow ()
         {
-            Width = 360,
-            Height = 590,
+            SizeToContent= System.Windows.SizeToContent.WidthAndHeight,
             ShowsNavigationUI = false,
             WindowStyle = System.Windows.WindowStyle.None,
             AllowsTransparency = true,
         };
 
-        _navigationWindow.PreviewMouseDown += (s, e) =>
+        _navigationWindow.MouseDown += (s, e) =>
         {
             _navigationWindow.DragMove ();
         };
@@ -28,7 +29,10 @@ public class App : MarkupApplication
     }
 
 
-    MarkupPage LoginPage => loginPage ??= new LoginPage ();
+    LoginPage LoginPage => loginPage ??= new LoginPage ();
+    MainPage MainPage => mainPage ??= new MainPage ();
     public void Go(MarkupPage page) => _navigationWindow.NavigationService.Navigate (page);
+
     public void Back(MarkupPage page) => _navigationWindow.NavigationService.GoBack ();
+    public void GoMainPage() => _navigationWindow.NavigationService.Navigate (MainPage);
 }
