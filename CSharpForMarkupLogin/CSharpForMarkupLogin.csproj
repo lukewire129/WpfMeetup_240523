@@ -23,4 +23,8 @@
     <ProjectReference Include="..\CSharpMarkup.WPF.Support\CSharpMarkup.WPF.Support.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="UI\Units\" />
+  </ItemGroup>
+
 </Project>
