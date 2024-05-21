@@ -35,9 +35,13 @@ public partial class LoginPage : MarkupPage
                         Grid (
                             TextBox ("aaa")
                                 .Height (37)
+                                .Padding(5)
+                                .VerticalContentAlignment(System.Windows.VerticalAlignment.Center)
                                 .Top (),
                             TextBox ()
                                 .Height (37)
+                                .Padding (5)
+                                .VerticalContentAlignment (System.Windows.VerticalAlignment.Center)
                                 .Bottom ()
                         ).Height (74),
 
