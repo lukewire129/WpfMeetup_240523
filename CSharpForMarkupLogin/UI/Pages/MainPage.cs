@@ -1,6 +1,4 @@
-﻿using System.Windows;
-
-namespace CSharpForMarkupLogin.UI.Pages;
+﻿namespace CSharpForMarkupLogin.UI.Pages;
 
 public partial class MainPage
 {
@@ -11,7 +9,7 @@ public partial class MainPage
             Rows(
                 (Rows.Main, 541),
                 (Rows.Ad, 100)
-                ),
+            ),
 
                 Grid (
                     Columns (
