@@ -5,10 +5,24 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
+    <PackageId>LukeWpfMarkup</PackageId>
+    <PackageVersion>1.0.0.2</PackageVersion>
+    <Description>Markup Support</Description>
+    <PackageProjectUrl>https://github.com/lukewire129/LukeMauiMarkup</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/lukewire129/LukeMauiMarkup</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>lukewire WPF Markup LukeMarkup</PackageTags>
+    <Copyright>Copyright © 2023 lukewire129.</Copyright>
+    <Authors>lukewire129</Authors>
+    <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="CSharpMarkup.WPF" Version="2.2.21" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.9.2" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.9.2" />
   </ItemGroup>
 
 </Project>
